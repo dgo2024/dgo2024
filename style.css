@@ -1,0 +1,128 @@
+body {
+  font: 13px "Open Sans", sans-erif;
+}
+img {
+  vertical-align: middle;
+}
+b, strong {
+  font-weight: 700;
+}
+em {
+  font-style: italic;
+}
+/* ------------------ */
+.top-nav {
+  width: 100%;
+  overflow: hidden;
+  background-color: #46a5e5;;
+}
+.top-nav a {
+  float: left;
+  color: rgba(255,255,255,.75);
+  text-align: center;
+  padding: 11px 15px;
+  text-decoration: none;
+  border-left: solid 1px rgba(255,255,255,.15);
+}
+.top-nav a:last-child {
+  border-right: solid 1px rgba(255,255,255,.15);
+}
+.top-nav a:hover {
+  color: white;
+}
+.top-nav.nav-right {
+  float: right;
+}
+.main-nav {
+  background-color: #17376e;
+  min-height: 102px;
+}
+.dgo-logo {
+  width: 130px;
+}
+#main-nav-menu li {
+  display:block;
+}
+#main-nav-menu li a {
+  display:block;
+  position: relative;
+  text-decoration: none;
+  height: 100px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 30px 40px 30px 15px;
+}
+#main-nav-menu li a:before{
+  content: ' ';
+  border-left: solid 1px rgba(255,255,255,.25);
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 0;
+}
+#main-nav-menu li a:after {
+  right: 0;
+}
+#main-nav-menu li a:hover:after {
+  background-color: #46a5e5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  height: 5px;
+  content: ' ';
+  transition: all .3s ease;
+}
+#main-nav-menu li a:focus:after {
+  background-color: #46a5e5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  height: 5px;
+  content: ' ';
+  transition: all .3s ease;
+}
+#main-nav-menu li a span{
+  display: block;
+  font-style: italic;
+  color: rgba(255,255,255,.5);
+  font-size: 13px;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+}
+.content-title {
+  background: #eaeaea;
+  padding-top: 33px;
+  padding-bottom: 23px;
+}
+.content-title h1 {
+  color: #343434;
+  font: 28px "Minion Pro", Times, serif;
+}
+.content-title h1 .title-breaker {
+  margin-top:35px;
+  font-size: 0.75em;
+}
+#sidebar {
+  margin-top: 150px;
+}
+#sidebar li>a {
+  text-transform:uppercase;
+  text-decoration: none;
+  line-height: 2;
+  color:4077f6;
+}
+.content .content-text {
+  color: #343434;
+}
+.content .content-text h2 {
+  font-size: 24px;
+}
+.content .content-text h3 {
+  font-size: 21px;
+}
+#main-text p {
+  line-height: 2;
+}

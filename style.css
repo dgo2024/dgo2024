@@ -117,12 +117,47 @@ em {
 .content .content-text {
   color: #343434;
 }
+.content .content-text .top-img {
+  width: 100%;
+}
 .content .content-text h2 {
   font-size: 24px;
 }
 .content .content-text h3 {
   font-size: 21px;
 }
+#main-text h3 {
+  text-transform:uppercase;
+}
 #main-text p {
   line-height: 2;
+  margin-bottom: 30px;
+}
+footer {
+  background-color: #17376e;
+}
+#bottom .footer-top {
+  height:43px;
+}
+#bottom .footer-bottom {
+  height:122px;
+}
+#bottom .footer-bottom .line-under {
+  border-bottom: solid 2px rgba(255,255,255,.15);
+  height: 20px;
+  margin-bottom: 22px;
+}
+#bottom .footer-bottom .btn-default {
+  font-size: 13px;
+  padding: 8px 20px;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  background-color: #17376e;
+}
+#bottom .footer-bottom .btn-default:hover {
+  color: #111;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  background-color: #fff;
 }

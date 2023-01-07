@@ -122,6 +122,7 @@ em {
 }
 .content .content-text h2 {
   font-size: 24px;
+  text-transform:uppercase;
 }
 .content .content-text h3 {
   font-size: 21px;
@@ -136,6 +137,10 @@ em {
 #main-text li {
   line-height: 2;
   margin-bottom: 15px;
+}
+#main-text.publications li {
+  line-height: 1.5;
+  margin-bottom: 5px;
 }
 #main-text table {
   color: #666;

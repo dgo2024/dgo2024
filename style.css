@@ -140,6 +140,9 @@ em {
 #main-text table {
   color: #666;
 }
+#main-text .business-info {
+  line-height: 1.5;
+}
 footer {
   background-color: #17376e;
 }

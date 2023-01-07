@@ -131,7 +131,11 @@ em {
 }
 #main-text p {
   line-height: 2;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+#main-text li {
+  line-height: 2;
+  margin-bottom: 15px;
 }
 footer {
   background-color: #17376e;

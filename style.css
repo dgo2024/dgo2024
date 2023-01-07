@@ -137,6 +137,9 @@ em {
   line-height: 2;
   margin-bottom: 15px;
 }
+#main-text table {
+  color: #666;
+}
 footer {
   background-color: #17376e;
 }

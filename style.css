@@ -105,8 +105,9 @@ em {
   margin-top:35px;
   font-size: 0.75em;
 }
-#sidebar {
-  margin-top: 150px;
+.sidebar-margin {
+  height: 150px;
+  width: 100%;
 }
 #sidebar li>a {
   text-transform:uppercase;

@@ -1,3 +1,6 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
 body {
   font: 13px "Open Sans", sans-erif;
 }
@@ -40,7 +43,12 @@ em {
 .dgo-logo {
   width: 130px;
 }
+#main-nav-menu ul {
+  margin-bottom: 0;
+}
 #main-nav-menu li {
+  min-height: 102px;
+  position: relative;
   display:block;
 }
 #main-nav-menu li a {
@@ -61,8 +69,28 @@ em {
   bottom: 30px;
   left: 0;
 }
-#main-nav-menu li a:after {
-  right: 0;
+#main-nav-menu li.active a:after {
+  background-color: #46a5e5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  width: 100%;
+  height: 5px;
+  content: ' ';
+  transition: all .3s ease;
+}
+#main-nav-menu li a:after,
+#main-nav-menu li a:focus:after {
+  background-color: #46a5e5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  width: 0;
+  height: 5px;
+  content: ' ';
+  transition: all .3s ease;
 }
 #main-nav-menu li a:hover:after {
   background-color: #46a5e5;
@@ -70,16 +98,7 @@ em {
   bottom: 0;
   left: 0;
   right: 100%;
-  height: 5px;
-  content: ' ';
-  transition: all .3s ease;
-}
-#main-nav-menu li a:focus:after {
-  background-color: #46a5e5;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 100%;
+  width: 100%;
   height: 5px;
   content: ' ';
   transition: all .3s ease;

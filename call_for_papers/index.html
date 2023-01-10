@@ -11,10 +11,15 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <nav>
+  <nav id="top">
     <div class="top-nav">
       <div class="container">
-        <div class="nav-left d-none d-lg-block">
+        <div class="mobile-nav-icon d-md-none">
+          <a class="mobile-icon" data-bs-toggle="offcanvas" href="#mobile-side-menu" role="button" aria-controls="mobile-side-menu">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="nav-left d-none d-md-block">
           <a href="http://dgs.memberclicks.net/">Membership portal</a>
           <a href="https://dgsociety.org/blog/">News</a>
           <a href="https://dgsociety.org/login/?redirect_to=https%3A%2F%2Fdgsociety.org%2Fcommittees%2F">Log In</a>
@@ -29,44 +34,73 @@
     <div class="main-nav">
       <div class="container">
         <div class="row">
-          <div class="dgo-logo col col-md-12">
+          <div class="dgo-logo col-3 offset-3 offset-md-0 col-lg-12">
             <img src="../images/logoV5-2.png" alt="logo">
           </div>
-          <div class="w-100 d-lg-none"></div>
-          <div id="main-nav-menu" class="col">
+          <div class="w-100 d-none d-sm-block d-xl-none"></div>
+          <div id="main-nav-menu" class="col d-none d-md-block">
             <ul class="d-flex flex-wrap">
               <li class="menu-item">
-                <a class="menu-item-link" href="https://dgsociety.org/blog/">Home</a>
+                <a class="menu-item-link" href="https://dgsociety.org/">Home</a>
               </li>
               <li class="menu-item">
-                <a class="menu-item-link" href="https://dgsociety.org/blog/">Become a member</a>
+                <a class="menu-item-link" href="https://dgs.memberclicks.net/index.php?option=com_mcform&view=ngforms&id=2076065#!/">Become a member</a>
               </li>
               <li class="menu-item">
-                <a class="menu-item-link" href="https://dgsociety.org/blog/">EGOV2022</a>
+                <a class="menu-item-link" href="https://dgsociety.org/egov-2022/">EGOV2022</a>
               </li>
               <li class="menu-item active">
-                <a class="menu-item-link" href="https://dgsociety.org/blog/">dgo.2024</a>
+                <a class="menu-item-link" href="../index.html">dgo.2024</a>
                 <ul class="dropdown-menu">
-                  <li><a href="./index.html">About</a></li>
-                  <li class="active"><a href="./call_for_papers/index.html">Call for Papers</a></li>
-                  <li><a href="./important_dates/index.html">Important Dates</a></li>
-                  <li><a href="./conference_venue_n_accomodation/index.html">Conference Venue & Accomodation</a></li>
-                  <li><a href="./organizers_n_hosting_team/index.html">Organizers & Hosting Team</a></li>
-                  <li><a href="./publications/index.html">Publications</a></li>
+                  <li><a href="../index.html">About</a></li>
+                  <li class="active"><a href="../call_for_papers/index.html">Call for Papers</a></li>
+                  <li><a href="../important_dates/index.html">Important Dates</a></li>
+                  <li><a href="../conference_venue_n_accomodation/index.html">Conference Venue & Accomodation</a></li>
+                  <li><a href="../organizers_n_hosting_team/index.html">Hosting Team & Organizers </a></li>
+                  <li><a href="../publications/index.html">Publications</a></li>
               </ul>
               </li>
               <li class="menu-item">
-                <a class="menu-item-link" href="https://dgsociety.org/blog/">About<span>Abuot DGS</span></a>
+                <a class="menu-item-link" href="https://dgsociety.org/about/">About<span>Abuot DGS</span></a>
               </li>
               <li class="menu-item">
-                <a class="menu-item-link" href="https://dgsociety.org/blog/">Chapters</a>
+                <a class="menu-item-link" href="https://dgsociety.org/chapters/">Chapters</a>
               </li>
               <li class="menu-item">
-                <a class="menu-item-link" href="https://dgsociety.org/blog/">Contact Us</a>
+                <a class="menu-item-link" href="https://dgsociety.org/contact-us/">Contact Us</a>
               </li>
             </ul>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-side-menu" aria-labelledby="mobile-side-menu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobile-side-menu-label"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body mobile-side-menu-body">
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="https://dgsociety.org/">HOME</a></li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="https://dgs.memberclicks.net/index.php?option=com_mcform&view=ngforms&id=2076065#!/">BECOME A MEMBER</a></li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="https://dgsociety.org/egov-2022/">EGOV2022</a></li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="../index.html">DGO.2024</a>
+            <ul class="sub-mobile-menu">
+              <li><a href="../index.html">About</a></li>
+              <li><a href="../call_for_papers/index.html">Call for Papers</a></li>
+              <li><a href="../important_dates/index.html">Important Dates</a></li>
+              <li><a href="../conference_venue_n_accomodation/index.html">Conference Venue & Accomodation</a></li>
+              <li><a href="../organizers_n_hosting_team/index.html">Hosting Team & Organizers </a></li>
+              <li><a href="../publications/index.html">Publications</a></li>
+          </ul>
+          </li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="https://dgsociety.org/about/">ABOUT</a></li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="https://dgsociety.org/chapters/">CHAPTERS</a></li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="https://dgsociety.org/contact-us/">CONTACT US</a></li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="https://dgsociety.org/blog/">NEWS</a></li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="http://dgs.memberclicks.net/">MEMBERSHIP PORTAL</a></li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link" href="https://dgsociety.org/login/?redirect_to=https%3A%2F%2Fdgsociety.org%2Fdgo-2023%2Fconference%2F">LOG IN</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -88,7 +122,7 @@
               <li><a href="../call_for_papers/index.html">Call for Papers</a></li>
               <li><a href="../important_dates/index.html">Important Dates</a></li>
               <li><a href="../conference_venue_n_accomodation/index.html">Conference Venue & Accomodation</a></li>
-              <li><a href="../organizers_n_hosting_team/index.html">Organizers & Hosting Team</a></li>
+              <li><a href="../organizers_n_hosting_team/index.html">Hosting Team & Organizers </a></li>
               <li><a href="../publications/index.html">Publications</a></li>
             </ul>
           </div>

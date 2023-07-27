@@ -12,7 +12,7 @@ img {
   vertical-align: middle;
 }
 b, strong {
-  font-weight: 700;
+  font-weight: 900;
 }
 em {
   font-style: italic;
@@ -259,8 +259,14 @@ em {
 .content .content-text h3 {
   font-size: 21px;
 }
-#main-text h3 {
+#main-text h3,
+#main-text h4
+{
   text-transform:uppercase;
+}
+#main-text h4 {
+  margin-top: 30px;
+  font-size: 17px;
 }
 #main-text p {
   line-height: 2;

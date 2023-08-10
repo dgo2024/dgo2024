@@ -252,9 +252,29 @@ em {
 .content .content-text .top-img {
   width: 100%;
 }
-.content .content-text h2 {
-  font-size: 24px;
+.content .content-text .option-heading {
+  background-color: #17376e;
+  padding-top: 15px;
+  border-bottom: 10px solid #46a5e5;
+}
+.content .content-text .option-heading h2 {
+  font-size: 25px;
   text-transform:uppercase;
+  text-shadow: .1 .1 #555;
+  /* font-weight: bolder; */
+  color: #fff;
+}
+.content .content-text .option-heading p {
+  font-size: 15px;
+  text-transform:uppercase;
+  text-shadow: .1 .1 #555;
+  /* font-weight: bolder; */
+  color: #aaa;
+}
+.content .content-text h2 {
+  font-size: 25px;
+  text-transform:uppercase;
+  
 }
 .content .content-text h3 {
   font-size: 21px;

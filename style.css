@@ -358,7 +358,10 @@ footer {
   margin-bottom: 5px;
 }
 #bottom .footer-bottom .list ul li a {
-  color:#ddd;
+  color:#7c94a5;
   text-decoration: none;
+}
+#bottom .footer-bottom .list ul li a:hover {
+  color:#c3c4c4;
 }
 

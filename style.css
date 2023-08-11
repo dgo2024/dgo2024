@@ -316,17 +316,14 @@ footer {
   background-color: #17376e;
 }
 #bottom .footer-top {
-  height:43px;
+  height:30px;
 }
-#bottom .footer-bottom {
-  height:122px;
-}
-#bottom .footer-bottom .line-under {
+#bottom .footer-top .line-under {
   border-bottom: solid 2px rgba(255,255,255,.15);
   height: 20px;
   margin-bottom: 22px;
 }
-#bottom .footer-bottom .btn-default {
+#bottom .footer-top .btn-default {
   font-size: 13px;
   padding: 8px 20px;
   color: #fff;
@@ -334,9 +331,34 @@ footer {
   border-radius: 2px;
   background-color: #17376e;
 }
-#bottom .footer-bottom .btn-default:hover {
+#bottom .footer-top .btn-default:hover {
   color: #111;
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 2px;
   background-color: #fff;
 }
+#bottom .footer-bottom {
+  height:122px;
+}
+#bottom .footer-bottom .maim-title h4 {
+  font-size: 18px;
+  color:#a5bad5;
+}
+#bottom .footer-bottom .maim-title h5 {
+  font-size: 14px;
+  color:#6a84a7;
+}
+#bottom .footer-bottom .list {
+  text-transform:uppercase;
+  font-size: 12px;
+}
+#bottom .footer-bottom .list ul li {
+ 
+  list-style:none;
+  margin-bottom: 5px;
+}
+#bottom .footer-bottom .list ul li a {
+  color:#ddd;
+  text-decoration: none;
+}
+

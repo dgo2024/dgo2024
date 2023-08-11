@@ -353,9 +353,9 @@ footer {
   font-size: 12px;
 }
 #bottom .footer-bottom .list ul li {
- 
-  list-style:none;
+  /* list-style:none; */
   margin-bottom: 5px;
+  color:#7c94a5;
 }
 #bottom .footer-bottom .list ul li a {
   color:#7c94a5;

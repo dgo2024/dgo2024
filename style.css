@@ -2,8 +2,10 @@
     box-sizing: border-box;
 }
 body {
-  font: 16px "Open Sans", sans-erif !important;
-  font-weight: 300;
+  font-family: Arial !important;
+  font: 16px "Open Sans", sans-erif;
+  font-weight: 100;
+
 }
 
 nav ul,  nav ol {

@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-  font: 13px "Open Sans", sans-erif;
+  font: 14px "Open Sans", sans-erif;
 }
 nav ul,  nav ol {
   padding-left: 0;
@@ -290,7 +290,7 @@ em {
 #main-text h4 {
   color: #17376e;
   display: inline;
-  font-size: 17px;
+  font-size: 18px;
   border-bottom: 2px solid #46a5e5;
 }
 #main-text p {
@@ -338,6 +338,7 @@ footer {
   background-color: #fff;
 }
 #bottom .footer-bottom {
+  margin-top: 60px;
   height:122px;
 }
 #bottom .footer-bottom .maim-title h4 {

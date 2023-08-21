@@ -3,6 +3,7 @@
 }
 body {
   font: 16px "Open Sans", sans-erif;
+  font-weight: 300;
 }
 
 nav ul,  nav ol {

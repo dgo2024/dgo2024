@@ -288,8 +288,13 @@ em {
 {
   text-transform:uppercase;
 }
+
 #main-text .subtitle {
-  margin: 30px 0 15px 0;
+  margin: 30px 0 5px 0;
+}
+#main-text .subtitle-describe {
+  display:block;
+  color: #888;
 }
 #main-text h4 {
   color: #17376e;
@@ -297,15 +302,28 @@ em {
   font-size: 18px;
   border-bottom: 2px solid #46a5e5;
 }
+#main-text h5 {
+  display: inline;
+  margin: 30px 0 0 0;
+  font-size: 16px;
+  font-weight: 900;
+  /* border-bottom: 1px solid #255372; */
+}
+
 #main-text p {
   line-height: 2;
-  margin-bottom: 15px;
+  margin: 15px 0;
   text-align:justify;
 }
+#main-text ul {
+  margin: 15px 0;
+}
+
 #main-text li {
-  line-height: 2;
+  line-height: 1.5;
   margin-bottom: 15px;
 }
+
 #main-text.publications li {
   line-height: 1.5;
   margin-bottom: 5px;

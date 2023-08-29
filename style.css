@@ -334,10 +334,13 @@ em {
 
 #main-text li {
   line-height: 1.8;
+  margin-bottom: 8px;
+  text-align:justify;
 }
 
 #main-text.publications li {
   line-height: 1.8;
+  text-align:justify;
 }
 #main-text table {
   color: #666;

@@ -52,6 +52,9 @@ em {
   background-color: #17376e;
   min-height: 102px;
 }
+.nav.nav-pills a.nav-link.active {
+  background-color: #357eae;
+}
 .dgo-logo {
   width: 130px;
 }

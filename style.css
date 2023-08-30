@@ -348,6 +348,12 @@ em {
 #main-text .business-info {
   line-height: 1.5;
 }
+#main-text .album a {
+  text-decoration: none;
+}
+#main-text .album .card:hover  {
+  opacity: 0.8;
+}
 footer {
   background-color: #17376e;
 }

@@ -354,6 +354,9 @@ em {
 #main-text .album .card:hover  {
   opacity: 0.8;
 }
+#main-text .best-paper-link:hover {
+  opacity: 0.8;
+}
 footer {
   background-color: #17376e;
 }

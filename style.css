@@ -465,7 +465,7 @@ footer {
 	.nav-item .submenu { 
 		display: none;
 		position: absolute;
-		left:102%; top:0;
+		left:95%; top:5px;
 	}
 	.nav-item .submenu-left{ 
 		right:100%; left:auto;

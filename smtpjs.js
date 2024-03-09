@@ -1,7 +1,7 @@
-// function submitHandler() {
-const btn = document.getElementById('dgo-travel-grant-submit');
 document.getElementById('dgo-travel-grant-form').addEventListener('submit', function (event) {
   event.preventDefault();
+  const btn = document.getElementById('dgo-travel-grant-submit');
+  btn.disabled = true;
   btn.value = 'Sending...';
   const name_of_applicant = document.getElementById('name-of-applicant').value;
   const institution = document.getElementById('institution').value;
@@ -78,9 +78,7 @@ document.getElementById('dgo-travel-grant-form').addEventListener('submit', func
   body += '   <td><strong>Why applying for travel grant</strong></td>';
   body += '   <td>' + why_travel_grant + '</td>';
   body += '  </tr>';
-  body += ' </table><br><br><br>';
-  body += 'Best regards<br>';
-  body += 'dg.o2024';
+  6
 
 
   Email.send({
@@ -91,20 +89,28 @@ document.getElementById('dgo-travel-grant-form').addEventListener('submit', func
     From: 'dgo2024.ntu@gmail.com',
     Subject: 'dg.o2024 - Appliying for travel grant from' + name_of_applicant,
     Body: body,
-  }).then((message) => alert(message));
-  btn.value = 'Send';
+  }).then((message) => {
+    if (message === 'OK') {
+      alert('Your application has been send successfully!');
+      init();
+      btn.value = 'Send';
+    } else {
+      btn.value = 'Send';
+      alert('Some error has occurred! Please try again');
+    }
+  });
 });
 function init() {
-  nameText.value = '';
-  institutionText.value = '';
-  addressText.value = '';
-  bphoneNumber.value = '';
-  emailText.value = '';
-  websiteText.value = '';
-  paperTitleText.value = '';
-  paperAbstractText.value = '';
-  departureDate.value = '';
-  returnDate.value = '';
-  expectedExpenseNumber.value = '';
-  whyText.value = '';
+  document.getElementById('name-of-applicant').value = '';
+  document.getElementById('institution').value = '';
+  document.getElementById('address').value = '';
+  document.getElementById('phone-number').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('website').value = '';
+  document.getElementById('paper-title').value = '';
+  document.getElementById('paper-abstract').value = '';
+  document.getElementById('departure-date').value = '';
+  document.getElementById('return-date').value = '';
+  document.getElementById('expected-expense').value = '';
+  document.getElementById('why-travel-grant').value = '';
 }

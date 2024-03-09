@@ -16,19 +16,70 @@ document.getElementById('dgo-travel-grant-form').addEventListener('submit', func
   const expected_expense = document.getElementById('expected-expense').value;
   const why_travel_grant = document.getElementById('why-travel-grant').value;
 
-  let body = '' + '<br><br><br>'; //%0A是換行 換了三行
-  body += ' Name of applicant:' + name_of_applicant + '<br>';
-  body += ' Institution:' + institution + '<br>';
-  body += ' Phone number:' + phone_number + '<br>';
-  body += ' Address:' + address + '<br>';
-  body += ' E-mail:' + email + '<br>';
-  body += ' Personal website:' + personal_website + '<br>';
-  body += ' Title of paper accepted:' + title_of_paper_accepted + '<br>';
-  body += ' Abstract of paper accepted:' + abstract_of_paper_accepted + '<br>';
-  body += ' Departure date:' + departure_date + '<br>';
-  body += ' Return date:' + return_date + '<br>';
-  body += ' Expected expense:' + expected_expense + '<br>';
-  body += ' Why are you applying for this travel grant?<br>' + why_travel_grant + '<br>';
+  
+  let body = 'Hello,' + '<br><br><br>'; //%0A是換行 換了三行
+  body += ' <table>';
+  body += '  <tr>';
+  body += '   <td><strong>Name of applicant</strong></td>';
+  body += '   <td>' + name_of_applicant + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Institution</strong></td>';
+  body += '   <td>' + institution + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Phone Number</strong></td>';
+  body += '   <td>' + phone_number + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Address</strong></td>';
+  body += '   <td>' + address + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>E-mail</strong></td>';
+  body += '   <td>' + email + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Personal Website</strong></td>';
+  body += '   <td>' + personal_website + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Title of Paper Accepted</strong></td>';
+  body += '   <td>' + title_of_paper_accepted + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Abstract of Paper Accepted</strong></td>';
+  body += '   <td>' + abstract_of_paper_accepted + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Departure Date</strong></td>';
+  body += '   <td>' + departure_date + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Return Date</strong></td>';
+  body += '   <td>' + return_date + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Expected expense</strong></td>';
+  body += '   <td>' + expected_expense + '</td>';
+  body += '  </tr>';
+
+  body += '  <tr>';
+  body += '   <td><strong>Why are you applying for this travel grant</strong></td>';
+  body += '   <td>' + why_travel_grant + '</td>';
+  body += '  </tr>';
+  body += ' </table>';
+
 
   Email.send({
     Host: 'smtp.elasticemail.com',

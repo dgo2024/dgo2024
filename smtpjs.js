@@ -75,17 +75,19 @@ document.getElementById('dgo-travel-grant-form').addEventListener('submit', func
   body += '  </tr>';
 
   body += '  <tr>';
-  body += '   <td><strong>Why are you applying for this travel grant</strong></td>';
+  body += '   <td><strong>Why applying for travel grant</strong></td>';
   body += '   <td>' + why_travel_grant + '</td>';
   body += '  </tr>';
-  body += ' </table>';
+  body += ' </table><br><br><br>';
+  body += 'Best regards<br>';
+  body += 'dg.o2024';
 
 
   Email.send({
     Host: 'smtp.elasticemail.com',
     Username: 'dgo2024.ntu@gmail.com',
     Password: '677813FEAE22572C88CC71BB0B2990576EA2',
-    To: 'junchoon14@gmail.com',
+    To: 'phauser@albany.edu',
     From: 'dgo2024.ntu@gmail.com',
     Subject: 'dg.o2024 - Appliying for travel grant from' + name_of_applicant,
     Body: body,

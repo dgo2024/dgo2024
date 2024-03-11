@@ -3,6 +3,7 @@ const btn = document.getElementById('dgo-travel-grant-submit');
 document.getElementById('dgo-travel-grant-form').addEventListener('submit', function (event) {
   event.preventDefault();
   btn.value = 'Sending...';
+  const email = document.getElementById('dgs-email').value;
   const nationality = document.getElementById('dgs-nationality').value;
   const passportNo = document.getElementById('dgs-passport-no').value;
   const surname = document.getElementById('dgs-surname').value;
@@ -12,6 +13,7 @@ document.getElementById('dgo-travel-grant-form').addEventListener('submit', func
   const sex = document.getElementById('dgs-sex').value;
   
   let params = {
+    email:email,
     nationality: nationality,
     passportNo: passportNo,
     surname: surname,
